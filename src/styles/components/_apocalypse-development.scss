@@ -1,0 +1,83 @@
+.apocalypse-development{
+  background: #1f1f1f;
+  padding-top: 110px;
+  .container{
+    flex-direction: column;
+  }
+}
+
+.apocalypse-development--center{
+  .apocalypse-development__point{
+    align-items:  center;
+  }
+  .apocalypse-development__point-title{
+    text-align: center;
+  }
+  .apocalypse-development__point-lead{
+    text-align: center;
+  }
+}
+
+.apocalypse-development__subtitle{
+  font-size: 21px;
+  color: #7e7e7e;
+  line-height: 29px;
+  width: 100%;
+  max-width: 650px;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: 300;
+  margin-bottom: 70px;
+}
+
+.apocalypse-development__title{
+  margin-bottom: 25px;
+}
+
+.apocalypse-development__points-container{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.apocalypse-development__point{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 490px;
+  margin-bottom: 100px;
+  .apocalypse-development__point-image{
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.apocalypse-development__point-title{
+  color: #fff;
+  font-size: 18px;
+  line-height: 21px;
+  width: 100%;
+  max-width: 265px;
+  font-weight: 300;
+  margin: 20px 0;
+}
+
+.apocalypse-development__point-lead{
+  font-size: 14px;
+  color: #7e7e7e;
+  margin: 0;
+  line-height: 22px;
+}
+
+.apocalypse-development__button{
+  @include button(50px, #017ade);
+  border: none;
+  max-width: 200px;
+  margin: auto;
+  margin-bottom: 120px;
+}

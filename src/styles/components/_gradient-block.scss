@@ -1,0 +1,66 @@
+.gradient-block{
+  padding: 140px 0 70px;
+  &--green{
+    @include gradient(90deg, #239370, #1ab670);
+  }
+  &--orange{
+    @include gradient(90deg, #f15526, #f16328);
+  }
+  &--center{
+    .gradient-block__item{
+      align-items: center;
+      .gradient-block__item-title{
+        text-align: center;
+      }
+    }
+  }
+  .container{
+    flex-direction: column;
+  }
+}
+
+.gradient-block__items-container{
+  display: flex;
+  justify-content: space-between
+}
+
+.gradient-block__item{
+  width: 25%;
+  color: #fff;
+  padding-top: 80px;
+  max-width: 265px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.gradient-block__item-img{
+  width: 95px;
+  height: 85px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.gradient-block__item-title{
+  font-size: 21px;
+  margin: 25px 0;
+  font-weight: 300;
+}
+
+.gradient-block__item-lead{
+  font-size: 17px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.gradient-block__button{
+  @include button(50px, transparent);
+  border: solid 1px #fff;
+  width: 100%;
+  max-width: 340px;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 70px auto;
+}

@@ -1,0 +1,54 @@
+.header{
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  z-index: 99999;
+  transition: top 1s;
+  &.js-show{
+    position: fixed;
+    top: 0;
+    background: rgba(0,0,0,0.6);
+  }
+  &.js-hide{
+    position: fixed;
+    background: rgba(0,0,0,0.6);
+    top: -100px;
+  }
+  .container{
+    justify-content: space-between;
+  }
+}
+
+.header__logo{
+  display: flex;
+  align-items: center;
+  transition: transform 1s;
+  &:hover{
+    transform: rotate(360deg);
+  }
+}
+
+.header-nav{
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.header-nav__item{
+  margin: 0 12px;
+  &--button{
+    margin: 0 0 0 83px;
+  }
+}
+
+.header-nav__link{
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.header-nav__button{
+  @include button(38px, #006bc3)
+}
