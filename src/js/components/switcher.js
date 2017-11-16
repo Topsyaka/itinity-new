@@ -3,12 +3,13 @@ export default class Switcher{
     const switcherInput = document.querySelector('#switcher');
     const switchLabel = document.querySelector('label[for="switcher"]');
     const checkedClass = 'checked';
-
-    switcherInput.addEventListener('change', (e) => {
-      const isChecked = e.target.checked;
-      isChecked
-        ?switchLabel.classList.add(checkedClass)
-        :switchLabel.classList.remove(checkedClass);
-    })
+    if(switcherInput){
+      switcherInput.addEventListener('change', (e) => {
+        const isChecked = e.target.checked;
+        isChecked
+          ?switchLabel.classList.add(checkedClass)
+          :switchLabel.classList.remove(checkedClass);
+      })
+    }
   }
 }

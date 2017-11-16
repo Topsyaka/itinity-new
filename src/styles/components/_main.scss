@@ -39,3 +39,10 @@ body{
   font-weight: 300;
   margin-bottom: 70px;
 }
+
+.wrapper{
+  background: #1f1f1f;
+  > :last-child{
+    padding-bottom: 300px;
+  }
+}

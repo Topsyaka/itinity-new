@@ -12,7 +12,8 @@ module.exports = {
   },
   module: {
     rules: [
-      { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" },
+      { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
+      { test: /\.jsx$/, loader: 'babel-loader', exclude: /node_modules/ },
       {
         test: /\.scss$/,
         use: [
@@ -66,6 +67,10 @@ module.exports = {
       {
         from: 'src/images',
         to: 'images'
+      },
+      {
+        from: 'src/vendor',
+        to: 'vendor'
       }
     ]),
     new ImageminPlugin({ test: /\.(jpe?g|png|gif|svg)$/i }),
