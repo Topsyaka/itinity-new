@@ -12,4 +12,4 @@ app.get('/works', (req, res) => {
   res.sendfile(__dirname + '/works.html');
 });
 
-app.listen(3535);
+app.listen(process.env.PORT || 5000);
