@@ -42,5 +42,9 @@
     "lodash": "^4.17.4",
     "normalize.css": "^7.0.0",
     "popper.js": "^1.12.7"
+  },
+  "engines": {
+    "node": "8.4.x",
+    "npm": "5.3.x"
   }
 }
