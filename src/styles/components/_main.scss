@@ -46,3 +46,10 @@ body{
     padding-bottom: 300px;
   }
 }
+
+.fake-block{
+  margin-top: 100vh;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}

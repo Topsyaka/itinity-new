@@ -1,15 +1,19 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
+const port = process.env.PORT || 5000;
 
 app.use('/dist',express.static(__dirname + '/dist/'));
 
+app.set('view engine', 'ejs');
+
 app.get('/', (req, res) => {
-  res.sendfile(__dirname + '/home.html');
+  res.render(__dirname + '/pages/home');
 });
 
 app.get('/works', (req, res) => {
-  res.sendfile(__dirname + '/works.html');
+  res.render(__dirname + '/pages/works');
 });
 
-app.listen(process.env.PORT || 5000);
+app.listen(port);
+console.log(`Server is running on port: ${port}`); 

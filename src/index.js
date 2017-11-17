@@ -3,6 +3,7 @@ import Main from './js/main';
 import Switcher from './js/components/switcher';
 import Header from './js/components/header';
 import styles from './styles/index.scss';
+import HomeScroll from './js/components/home-scroll';
 import 'normalize.css';
 import 'bootstrap';
 
@@ -18,3 +19,4 @@ function component() {
 }
 Switcher.toogleSwitch();
 Header.toogleHeader();
+HomeScroll.initScroll();

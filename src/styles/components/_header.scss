@@ -4,6 +4,8 @@
   position: absolute;
   z-index: 99999;
   transition: top 0.6s;
+  z-index: 99999;
+  top: 0;
   &.js-show{
     position: fixed;
     top: 0;
@@ -16,6 +18,7 @@
   }
   .container{
     justify-content: space-between;
+    align-items: center;
   }
 }
 

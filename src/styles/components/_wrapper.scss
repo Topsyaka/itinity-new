@@ -1,0 +1,27 @@
+.wrapper{
+  position: relative;
+  z-index: 2;
+  background: #1f1f1f;
+  transition: background .3s ease;
+}
+
+body{
+  &.black{
+    .wrapper{
+      background: #1f1f1f;
+    }
+  }
+  &.green{
+    .wrapper{
+      background: #239370;
+      //@include gradient(90deg, #239370, #1ab670);
+    }
+  }
+
+  &.orange{
+    .wrapper{
+      background: #f15526;
+      //@include gradient(90deg, #f15526, #f16328);
+    }
+  }
+}

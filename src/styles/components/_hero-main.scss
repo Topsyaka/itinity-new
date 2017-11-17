@@ -1,8 +1,11 @@
 .hero-main{
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   background: #007ee5;
   padding-top: 170px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
   .container{
     flex-direction: column;
   }
@@ -22,6 +25,7 @@
   color: #fff;
   text-align: center;
   line-height: 46px;
+  font-weight: 300;
 }
 
 .hero-main__button{
