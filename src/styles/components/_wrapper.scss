@@ -3,6 +3,9 @@
   z-index: 2;
   background: #1f1f1f;
   transition: background .3s ease;
+  &.services-wrapper{
+    background: #010101;
+  }
 }
 
 body{

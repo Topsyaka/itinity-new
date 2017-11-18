@@ -15,5 +15,9 @@ app.get('/works', (req, res) => {
   res.render(__dirname + '/pages/works');
 });
 
+app.get('/services', (req, res) => {
+  res.render(__dirname + '/pages/services');
+});
+
 app.listen(port);
 console.log(`Server is running on port: ${port}`); 

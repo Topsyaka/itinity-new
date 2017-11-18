@@ -1,0 +1,72 @@
+.services-block{
+  padding-bottom: 92px;
+  margin-bottom: 130px;
+  .container{
+    flex-direction: column;
+  }
+  background-size: 1200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  &--strategy{
+    background-size: 950px;
+  }
+  &--technology{
+    background-size: 600px;
+  }
+  &--design{
+    background-size: 990px;
+  }
+}
+
+.services-block__lead{
+  font-style: 17px;
+  color: #7e7e7e;
+  max-width: 620px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 80px;
+}
+
+.services-block__subtitle{
+  margin-bottom: 15px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.services-block__list{
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 620px;
+  justify-content: space-between;
+  .services-block__list-item{
+    width: 50%;
+    max-width: 300px;
+    color: #fff;
+    font-style: 17px;
+    font-weight: 300;
+    line-height: 37px;
+    padding-left: 30px;
+    position: relative;
+    &:before{
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      background-image: url('./dist/images/support-icons/tick-white.png');
+      width: 13px;
+      height: 13px;
+      background-size: cover;
+      display: block;
+      content: '';
+      background-repeat: no-repeat;
+    }
+  }
+}
+

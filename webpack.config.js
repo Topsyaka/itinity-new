@@ -2,6 +2,7 @@ const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ImageminPlugin = require('imagemin-webpack-plugin').default;
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const webpack = require('webpack');
 
 module.exports = {
@@ -22,7 +23,8 @@ module.exports = {
           }, 
           {
             loader: "css-loader", options: {
-                sourceMap: true
+                sourceMap: true,
+                url: false
             }
           }, 
           {
@@ -49,7 +51,8 @@ module.exports = {
           }, 
           {
             loader: "css-loader", options: {
-                sourceMap: true
+                sourceMap: true,
+                url: false
             }
           }
         ]

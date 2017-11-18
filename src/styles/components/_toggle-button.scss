@@ -1,0 +1,44 @@
+.toggle-buttons{
+  margin-bottom: 200px;
+  .container{
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.toggle-button{
+  width: 100%;
+  max-width: 360px;
+  height: 210px;
+  border-radius: 4px;
+  background: #121212;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+  padding-top: 40px;
+  &:after{
+    position: absolute;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 4px;
+    background: #007ee5;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.toggle-button__sign{
+  text-transform: uppercase;
+  color: #fff;
+  font-style: 17px;
+  margin: 0;
+}
+
+.toggle-button__img{
+  margin-bottom: 30px;
+}
