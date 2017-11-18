@@ -6,6 +6,8 @@ import styles from './styles/index.scss';
 import HomeScroll from './js/components/home-scroll';
 import 'normalize.css';
 import 'bootstrap';
+import SmoothScroll from './js/components/smoothScroll';
+require('smoothscroll-polyfill').polyfill();
 
 function component() {
   var element = document.createElement('div');
@@ -20,3 +22,5 @@ function component() {
 Switcher.toogleSwitch();
 Header.toogleHeader();
 HomeScroll.initScroll();
+window.__forceSmoothScrollPolyfill__ = true;
+SmoothScroll.initScroll();
