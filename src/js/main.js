@@ -1,5 +1,4 @@
-export default class Main{
-   static sayHello(){
-    console.log('Hello');
-  }
-}
+import './components/header';
+import './components/switcher';
+import './components/home-scroll';
+import './components/smoothScroll';

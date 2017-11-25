@@ -1,16 +1,14 @@
-export default class HomeScroll{
-  static initScroll(){
-    const wrapper = document.querySelector('.wrapper');
-    const dataScrollElements = document.querySelectorAll('section[data-scroll]');
-    const offset = -200;
+function initScroll(){
+  const wrapper = document.querySelector('.wrapper');
+  const dataScrollElements = document.querySelectorAll('section[data-scroll]');
+  const offset = -200;
 
-    // Generating all offset of elements
-    window.addEventListener('scroll', () => {
-      dataScrollElements.forEach((item) => {
-        elementInView(item, offset);
-      })
-    });
-  }
+  // Generating all offset of elements
+  window.addEventListener('scroll', () => {
+    dataScrollElements.forEach((item) => {
+      elementInView(item, offset);
+    })
+  });
 }
 
 function elementInView(element, offset){
@@ -28,3 +26,5 @@ function elementInView(element, offset){
     } 
   }
 }
+
+initScroll();

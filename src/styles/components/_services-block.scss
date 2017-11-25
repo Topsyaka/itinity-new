@@ -44,6 +44,9 @@
   flex-wrap: wrap;
   max-width: 620px;
   justify-content: space-between;
+  @media screen and (max-width: 768px){
+    flex-direction: column;
+  }
   .services-block__list-item{
     width: 50%;
     max-width: 300px;
@@ -53,6 +56,9 @@
     line-height: 37px;
     padding-left: 30px;
     position: relative;
+    @media screen and (max-width: 768px){
+      width: 100%;
+    }
     &:before{
       position: absolute;
       left: 0;

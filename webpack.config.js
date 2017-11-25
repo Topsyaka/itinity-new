@@ -5,6 +5,8 @@ const ImageminPlugin = require('imagemin-webpack-plugin').default;
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const webpack = require('webpack');
 
+const extractSCSS = new ExtractTextPlugin('styles/[name].css');
+
 module.exports = {
   entry: './src/index.js',
   output: {
@@ -17,31 +19,29 @@ module.exports = {
       { test: /\.jsx$/, loader: 'babel-loader', exclude: /node_modules/ },
       {
         test: /\.scss$/,
-        use: [
-          {
-            loader: "style-loader"
-          }, 
-          {
+        use: extractSCSS.extract({
+          use: [{
             loader: "css-loader", options: {
                 sourceMap: true,
                 url: false
-            }
-          }, 
-          {
-            loader: 'postcss-loader',
-            options: {
-              sourceMap: 'inline',
-              config: {
-                path: './postcss.config.js'
+              }
+            }, 
+            {
+              loader: 'postcss-loader',
+              options: {
+                sourceMap: 'inline',
+                config: {
+                  path: './postcss.config.js'
+                }
+              }
+            },
+            {
+              loader: "sass-loader", options: {
+                  sourceMap: true
               }
             }
-          },
-          {
-            loader: "sass-loader", options: {
-                sourceMap: true
-            }
-          }
-        ]
+          ]
+        })
       },
       {
         test: /\.css$/,
@@ -83,6 +83,7 @@ module.exports = {
       jQuery: "jquery/dist/jquery.min.js",
       "window.jQuery": "jquery/dist/jquery.min.js",
       Popper: ['popper.js', 'default'],
-    })
+    }),
+    extractSCSS
   ]
 };

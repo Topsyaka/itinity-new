@@ -7,7 +7,9 @@
   border-radius: 22px;
   position: relative;
   background: #fff;
-
+  @media screen and (max-width: 870px){
+   margin-bottom: 40px;
+  }
   .swithcher-selected{
     position: relative;
     z-index: 2;
