@@ -7,7 +7,9 @@
 
 .main-contact-form__content{
   display: flex;
-  flex-wrap: wrap;
+  @media screen and (max-width: 768px){
+    flex-wrap: wrap;
+  }
 }
 
 .main-contact-form__points-list{
@@ -41,6 +43,9 @@
   text-transform: uppercase;
   width: 260px;
   margin: 0 auto;
+  @media screen and (max-width: 768px){
+    width: 100%;
+  }
 }
 
 .main-contact-form__form-container{
@@ -48,6 +53,10 @@
   border-radius: 5px;
   padding: 50px 70px 40px;
   width: 490px;
+  @media screen and (max-width: 768px){
+    width: 100%;
+    padding: 50px 10px 40px;
+  }
 }
 
 .main-contact-form__form-title{
@@ -102,10 +111,16 @@
 .main-contact-form__points-list{
   padding-top: 55px;
   padding-right: 150px;
+  @media screen and (max-width: 768px){
+    padding-right: 0;
+  }
 }
 
 .main-contact-form__title{
   margin: 120px auto 120px;
   width: 100%;
   max-width: 580px;
+  @media screen and (max-width: 768px){
+    margin: 120px auto 20px;
+  }
 }

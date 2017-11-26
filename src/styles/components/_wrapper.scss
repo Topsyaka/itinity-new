@@ -6,6 +6,14 @@
   &.services-wrapper{
     background: #010101;
   }
+  &.company{
+    background: #170e25;
+    .works-title{
+      background-image: url('../images/company/company-bg.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
 }
 
 body{

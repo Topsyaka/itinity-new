@@ -48,6 +48,9 @@
   justify-content: flex-start;
   max-width: 490px;
   margin-bottom: 100px;
+  @media screen and (max-width: 600px){
+    width: 100%;
+  }
   .apocalypse-development__point-image{
     width: 100px;
     height: 100px;

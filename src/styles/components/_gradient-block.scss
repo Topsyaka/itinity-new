@@ -21,7 +21,12 @@
 
 .gradient-block__items-container{
   display: flex;
-  justify-content: space-between
+  justify-content: space-between;
+  @media screen and (max-width: 768px){
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .gradient-block__item{
@@ -32,6 +37,10 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  @media screen and (max-width: 768px){
+    width: 100%;
+    align-items: center;
+  }
 }
 
 .gradient-block__item-img{
@@ -52,6 +61,9 @@
   font-size: 17px;
   font-weight: 300;
   margin: 0;
+  @media screen and (max-width: 768px){
+    text-align: center;
+  }
 }
 
 .gradient-block__button{

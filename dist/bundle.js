@@ -17248,6 +17248,10 @@ __webpack_require__(7);
 
 __webpack_require__(8);
 
+__webpack_require__(20);
+
+__webpack_require__(21);
+
 /***/ }),
 /* 5 */
 /***/ (function(module, exports, __webpack_require__) {
@@ -24780,6 +24784,40 @@ Popper.Defaults = Defaults;
 //# sourceMappingURL=popper.js.map
 
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
+
+/***/ }),
+/* 20 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var form = document.getElementById('get-touch');
+
+form.addEventListener('submit', function (e) {
+  e.preventDefault();
+
+  var inputList = Array.from(form.querySelectorAll('input'));
+  var selectList = Array.from(form.querySelectorAll('select'));
+  //const textarea = Array.from(from.querySelectorAll('textarea'));
+  var controllsArray = inputList.concat(selectList); //.concat(textarea);
+
+  console.log(controllsArray);
+});
+
+/***/ }),
+/* 21 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var modalToggle = document.getElementById('toggle-modal');
+var modal = document.getElementById('lets-talk');
+
+modalToggle.addEventListener('click', function () {
+  modal.classList.toggle('visible');
+});
 
 /***/ })
 /******/ ]);

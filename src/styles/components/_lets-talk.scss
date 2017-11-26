@@ -1,0 +1,82 @@
+.lets-talk{
+  background-image: url('../images/lets-talk-bg.png');
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 210px;
+  padding-bottom: 60px;
+  overflow-y:scroll;
+  overflow-x:hidden;
+  display: none;
+  .btn{
+    height: 50px;
+  }
+  .container{
+    flex-direction: column;
+    width: 100%;
+    max-width: 810px;
+    padding: 0;
+  }
+  .row{
+    margin-bottom: 25px;
+  }
+  &.visible{
+    display: block;
+  }
+  .open>.dropdown-toggle.btn-default{
+    background-color: transparent;
+  }
+}
+
+.btn-default{
+  background-color: transparent;
+  color: #fff;
+  border-color: #6f6b91;
+}
+
+.bootstrap-select>.dropdown-toggle.bs-placeholder, 
+.bootstrap-select>.dropdown-toggle.bs-placeholder:active{
+  color: #fff;  
+}
+
+.bootstrap-select>.dropdown-toggle.bs-placeholder:focus, 
+.bootstrap-select>.dropdown-toggle.bs-placeholder:hover{
+  color: #fff;
+}
+
+.form-control{
+  background-color: transparent;
+  color: #fff;
+  border-color: #6f6b91;
+  height: 50px;
+  &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #fff;
+    text-transform: uppercase;
+  }
+  &::-moz-placeholder { /* Firefox 19+ */
+    color: #fff;
+    text-transform: uppercase;
+  }
+  &:-ms-input-placeholder { /* IE 10+ */
+    color: #fff;
+    text-transform: uppercase;
+  }
+  &:-moz-placeholder { /* Firefox 18- */
+    color: #fff;
+    text-transform: uppercase;
+  }
+  resize: none;
+}
+
+.lets-talk__title{
+  margin-bottom: 65px;
+  font-size: 46px;
+}
+
+.button-submit{
+  @include button(50px, #f9ffed);
+  color: #50525e;
+}

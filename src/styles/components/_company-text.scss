@@ -1,0 +1,38 @@
+.company-text{
+  width: 100%;
+  padding: 0 100px;
+  color: #fff;
+  margin-top: 140px;
+  @media screen and (max-width: 768px){
+    padding: 0;
+  }
+}
+
+.company-pasionate{
+  margin-bottom: 140px;
+}
+
+.company-pasionate__title{
+  font-size: 56px;
+  line-height: 86px;
+  margin: 0;
+  font-weight: 400;
+  @media screen and (max-width: 768px){
+    font-size: 46px;
+  }
+}
+
+.company-pasionate__subtitle{
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 86px;
+  margin: 0;
+}
+
+.company-pasionate__lead{
+  font-size: 17px;
+  font-weight: 300;
+  color: #7c6d92;
+  margin: 0;
+  margin-bottom: 25px;
+}

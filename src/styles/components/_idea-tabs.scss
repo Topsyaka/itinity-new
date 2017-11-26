@@ -38,6 +38,11 @@
   }
   &.active{
     display: flex;
+    @media screen and (max-width: 768px){
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
     &.visible{
       opacity: 1;
       &#no-idea,

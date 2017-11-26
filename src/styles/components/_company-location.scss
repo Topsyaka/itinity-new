@@ -1,0 +1,30 @@
+.company-location{
+  background-image: url('../images/company/company-bg-2.png');
+  background-size: cover;
+  background-position: center;
+  padding-top: 130px;
+  .container{
+    flex-direction: column;
+  }
+}
+
+.company-location__title{
+  text-align: left;
+}
+
+.company-location__text{
+  text-align: left;
+  font-size: 17px;
+  color: #7c6d92;
+  font-weight: 300;
+  width: 100%;
+  max-width: 570px;
+  line-height: 25px;
+  margin-bottom: 60px;
+}
+
+.company-location__address{
+  font-size: 17px;
+  color: #7c6d92;
+  font-weight: 300;
+}
