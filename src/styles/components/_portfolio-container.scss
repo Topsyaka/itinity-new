@@ -1,4 +1,5 @@
 .portfolio-container{
+  padding-bottom: 100px;
   .container{
     flex-wrap: wrap;
     flex-direction: column;
@@ -47,6 +48,33 @@
     }
     .portfolio-card__image{
       margin-left: -70px;
+    }
+  }
+
+  &--elbiled{
+    align-items:center;
+    .portfolio-card__tag{
+      background: #0f0f0f;
+    }
+    @include gradient(60deg, #131313, #252525);
+    .portfolio-card__image{
+      height: 310px;
+      width: 100%;
+      max-width: 570px;
+    }
+  }
+  &--pullman{
+    align-items:center;
+    .portfolio-card__tag{
+      background: #1e237c;
+    }
+    @include gradient(60deg, #2b32b2, #2b32b2);
+    .portfolio-card__image{
+      -webkit-background-size: contain;
+      background-size: contain;
+      width: 100%;
+      max-width: 570px;
+      background-position: right;
     }
   }
 }

@@ -20,7 +20,7 @@ app.get('/services', (req, res) => {
 });
 
 app.get('/company', (req, res) => {
-  res.render(__dirname + '/pages/company');
+  res.render(__dirname + '/pages/about');
 });
 
 app.listen(port);

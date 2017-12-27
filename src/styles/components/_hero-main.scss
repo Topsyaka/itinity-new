@@ -59,3 +59,28 @@
     }
   }
 }
+
+.hero--about{
+  height: 100vh;
+  background: #02ccd6 url('../images/about/hero-bg.png');
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: 50%;
+  .container{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero__logo{
+    margin-bottom: 40px;
+  }
+  .hero-main__wea{
+    color: #ffffff;
+    font-size: 40px;
+    span.bold{
+      font-weight: 700;
+    }
+  }
+}

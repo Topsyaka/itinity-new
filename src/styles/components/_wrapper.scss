@@ -1,11 +1,8 @@
 .wrapper{
   position: relative;
   z-index: 2;
-  background: #1f1f1f;
+  background: #000000;
   transition: background .3s ease;
-  &.services-wrapper{
-    background: #010101;
-  }
   &.company{
     background: #170e25;
     .works-title{
@@ -14,6 +11,10 @@
       background-repeat: no-repeat;
     }
   }
+}
+
+.wrapper--about{
+  background: none;
 }
 
 body{

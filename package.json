@@ -6,7 +6,8 @@
   "scripts": {
     "build": "webpack",
     "watch": "webpack --watch",
-    "start": "sudo webpack && node server.js"
+    "start": "sudo webpack && node server.js",
+    "dev":"npm run watch & node server.js"
   },
   "author": "",
   "license": "ISC",

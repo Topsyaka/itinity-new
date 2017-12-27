@@ -6,116 +6,157 @@
   <body>
     <% include ./partials/header %>
     <div class="wrapper services-wrapper">
-      <section class="works-title">
+      <section class="services-hero">
+        <div class="services-hero__absolute-cover"></div>
+        <div class="services-hero-top">
+          <div class="container">
+            <div class="services-hero-top__content">
+              <h2 class="services-hero-top__title">
+                Our Services
+              </h2>
+              <div class="services-hero-top__lead">
+                <p>
+                  We are a full-service product agency with experience in all aspects of product
+                  design and development.
+                </p>
+                <p>
+                  Our relationship with customers is open, based on trust and communication.
+                  We are determined to deliver satisfaction and excellence to all your business needs.
+                </p>
+              </div>
+            </div>
+            <div class="service-hero-top__main-image">
+              <img src="../dist/images/services/main_image.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="services-hero-bottom">
+          <div class="container">
+            <a class="services-hero-bottom__item toggle-button" href="#strategy">
+              <div class="img-container">
+                <img src="../dist/images/services/strategy.png" alt="">
+              </div>
+              <span class="item__sign">Product Strategy</span>
+            </a>
+            <a class="services-hero-bottom__item toggle-button" href="#design">
+              <div class="img-container">
+                <img src="../dist/images/services/graphic-design.png" alt="">
+              </div>
+              <span class="item__sign">Design</span>
+            </a>
+            <a class="services-hero-bottom__item toggle-button" href="#development">
+              <div class="img-container">
+                <img src="../dist/images/services/development.png" alt="">
+              </div>
+              <span class="item__sign">Development</span>
+            </a>
+            <a class="services-hero-bottom__item toggle-button" href="#launch">
+              <div class="img-container">
+                <img src="../dist/images/services/launch.png" alt="">
+              </div>
+              <span class="item__sign">Launch</span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="services-content">
+        <div class="services-strategy" id="strategy">
+          <div class="container">
+            <h2 class="services-content__title">
+              Product Strategy
+            </h2>
+            <p class="services-content__text">
+              Maybe you dream of building a rocket to send into orbit, or more likely, a killer mobile app for your customers. We’ll work with you to take all your great ideas and turn them into a focused, goal-oriented product strategy that we can execute on successfully together. We can help you with the following challenges:
+            </p>
+            <h3 class="services-content__subtitle">PRODUCT ROADMAP & FEATURE PRIORITIZATION</h3>
+            <p class="services-content__text">
+              We'll help you define the right product for your customers and work with you to create a reasonable, achievable product roadmap.
+            </p>
+            <h3 class="services-content__subtitle">CONCEPT TESTING</h3>
+            <p class="services-content__text">
+              We'll test your existing app or a new app concept with Design Sprints to ensure that your concept is understood and valuable in a real, existing market.
+            </p>
+            <h3 class="services-content__subtitle">
+              TECHNOLOGY ASSESSMENT
+            </h3>
+            <p class="services-content__text">
+              We'll help you understand the opportunities and constraints with specific technologies that you currently use or are considering for use.
+            </p>
+            <h3 class="services-content__subtitle">
+              TEAM DEFINITION
+            </h3>
+            <p class="services-content__text">
+              We'll help you identify the right team to put in place to design, build, and support your next product.
+            </p>
+          </div>
+        </div>
+        <div class="services-design" id="design">
+          <div class="container">
+            <h2 class="services-content__title">
+              Design
+            </h2>
+            <p class="services-content__text">
+              We live and breathe beautiful. Our design team is passionate about building simply
+              amazing digital products that push the limits of technology. Whether you're going all in
+              on a digital platform, or looking to
+              test the market or viability of a product concept - We're the go-to team for all of it.
+            </p>
+            <ul class="services-list">
+              <li class="services-list__item">INFORMATION ARCHITECTURE</li>
+              <li class="services-list__item">VISUAL DESIGN</li>
+              <li class="services-list__item">PROTOTYPING & TESTING</li>
+              <li class="services-list__item">CONTENT DEVELOPMENT</li>
+            </ul>
+          </div>
+        </div>
+        <div class="services-development" id="development">
+          <div class="container">
+            <h2 class="services-content__title">
+              Development
+            </h2>
+            <p class="services-content__text">
+              Our team has extensive experience building world-class software applications. We can either become your product team or integrate seamlessly into your existing product team to help you build a world-class Android, iOS, or Web application.
+            </p>
+            <h3 class="services-content__subtitle">MOBILE APP DEVELOPMENT</h3>
+            <p class="services-content__text">
+              We build both iOS and Android native applications with a focus on stability, speed, and elegance that consistently receive five star App Store reviews. We can work as an independent product team or integrated into your existing team.
+            </p>
+            <h3 class="services-content__subtitle">WEB APP DEVELOPMENT</h3>
+            <p class="services-content__text">
+              We build web applications using the latest technologies such as React, Redux, and MobX. In general, however, we are technology-agnostic and also have senior leadership in Spring and Django technologies. We can work as an independent product team or integrated into your existing team.
+            </p>
+          </div>
+        </div>
+        <div class="services-launch" id="launch">
+          <div class="container">
+            <h2 class="services-content__title">
+              Launch
+            </h2>
+            <p class="services-content__text">
+              As product guys, we understand that launching your product is only the beginning. We’ll ensure your deployment goes smoothly and your team is well set up to own your app post-launch.
+            </p>
+            <h3 class="services-content__subtitle">LAUNCH PLANNING & ROLLOUT</h3>
+            <p class="services-content__text">
+              We'll help you have a successful launch and rollout of your product. Whether it be provisioning enough servers to handle the new traffic or working closely with your marketing team on a go-to-market strategy, we will help ensure a smooth and successful release.
+            </p>
+            <h3 class="services-content__subtitle">POST LAUNCH SUPPORT & MAINTENANCE</h3>
+            <p class="services-content__text">
+              We do not just build a product and leave. We know that success requires long-term care so we provide comprehensive post-launch support and maintenance. This could include ongoing improvements to the app or testing to ensure things are running smoothly. Also, when the time comes we'll help you plan how to transition our work back to your in-house team and even help you hire a team that can own the work going forward.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="lets-container">
         <div class="container">
-          <h1 class="works-title__title block-title">
-            Services
-          </h1>
-          <h2 class="works-title__subtitle block-subtitle">
-            We focus on dreaming and building
-          </h2>
-          <p class="works-title__lead">
-            At YML, we believe that the products we create are the starting point, 
-            not the endpoint. A product that doesn't push the limits of business isn't 
-            what we're looking to build. We treat web as an extension of mobile and not 
-            the other way around. PayPal didn't ask us to build a beautiful product.
-            They asked us to design a product that users all over the world will love 
-            and can scale to millions of transactions. We took the challenge head on. 
-            The leading medical institutions didn't ask us to build a series of screens. 
-            They asked for our help in creating a product that will disrupt how medical research 
-            is being done. Mission Accomplished.
-          </p>
+          <h4 class="lets__text">
+            Do you have a project in mind?
+          </h4>
+          <button class="lets__button">
+            Let's talk
+          </button>
         </div>
       </section>
-      <section class="toggle-buttons">
-        <div class="container">
-          <a href="#strategy" class="toggle-button">
-            <img src="../dist/images/icons/icon-blub.png" alt="" class="toggle-button__img">
-            <h3 class="toggle-button__sign">Digital strategy</h3>
-          </a>
-          <a href="#design" class="toggle-button">
-            <img src="../dist/images/icons/icon-ui.png" alt="" class="toggle-button__img">
-            <h3 class="toggle-button__sign">Design</h3>
-          </a>
-          <a href="#technology" class="toggle-button">
-            <img src="../dist/images/icons/icon-rocket.png" alt="" class="toggle-button__img">
-            <h3 class="toggle-button__sign">Technology</h3>
-          </a>
-        </div>
-      </section>
-      <section class="services-block services-block--strategy" id="strategy" style="background-image: url('./dist/images/services/strategy-bg.png');">
-        <div class="container" >
-          <h2 class="services-block__title block-title">
-            Digital Strategy
-          </h2>
-          <h3 class="services-block__subtitle block-subtitle">
-            Planing and Research
-          </h3>
-          <p class="services-block__lead">
-              The pinnacle of our product design and development services: we help 
-              you see what you can't. We've been down this road and have seen hundreds 
-              of digital projects from concept to launch. Our goal is to not only turn your 
-              vision into reality, but to guide you with best practices along the way. Your success is our success.
-          </p>
-          <ul class="services-block__list">
-            <li class="services-block__list-item">Brand & Product Strategy</li>
-            <li class="services-block__list-item">Strategic Planning</li>
-            <li class="services-block__list-item">Audience Insights</li>
-            <li class="services-block__list-item">Growth Hacking</li>
-            <li class="services-block__list-item">Competitive Research & Analysis</li>
-          </ul>
-        </div>
-      </section>
-      <section class="services-block services-block--design" id="design" style="background-image: url('./dist/images/services/design-bg.png');">
-        <div class="container" >
-          <h2 class="services-block__title block-title">
-            Digital Strategy
-          </h2>
-          <h3 class="services-block__subtitle block-subtitle">
-            Planing and Research
-          </h3>
-          <p class="services-block__lead">
-              The pinnacle of our product design and development services: we help 
-              you see what you can't. We've been down this road and have seen hundreds 
-              of digital projects from concept to launch. Our goal is to not only turn your 
-              vision into reality, but to guide you with best practices along the way. Your success is our success.
-          </p>
-          <ul class="services-block__list">
-            <li class="services-block__list-item">Brand & Product Strategy</li>
-            <li class="services-block__list-item">Strategic Planning</li>
-            <li class="services-block__list-item">Audience Insights</li>
-            <li class="services-block__list-item">Growth Hacking</li>
-            <li class="services-block__list-item">Competitive Research & Analysis</li>
-          </ul>
-        </div>
-      </section>   
-      <section class="services-block services-block--technology" id="technology" style="background-image: url('./dist/images/services/technology-bg.png');">
-        <div class="container" >
-          <h2 class="services-block__title block-title">
-            Digital Strategy
-          </h2>
-          <h3 class="services-block__subtitle block-subtitle">
-            Planing and Research
-          </h3>
-          <p class="services-block__lead">
-              The pinnacle of our product design and development services: we help 
-              you see what you can't. We've been down this road and have seen hundreds 
-              of digital projects from concept to launch. Our goal is to not only turn your 
-              vision into reality, but to guide you with best practices along the way. Your success is our success.
-          </p>
-          <ul class="services-block__list">
-            <li class="services-block__list-item">Brand & Product Strategy</li>
-            <li class="services-block__list-item">Strategic Planning</li>
-            <li class="services-block__list-item">Audience Insights</li>
-            <li class="services-block__list-item">Growth Hacking</li>
-            <li class="services-block__list-item">Competitive Research & Analysis</li>
-          </ul>
-        </div>
-      </section>        
-      <div class="last-block"></div>
     </div>
-    <% include ./partials/footer %>    
-    <script src="./dist/bundle.js"></script>
-    
+    <% include ./partials/footer %>
   </body>
 </html>
