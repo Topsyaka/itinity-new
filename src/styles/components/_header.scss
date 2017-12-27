@@ -55,13 +55,34 @@
 }
 
 .header-nav__link{
-  font-size: 14px;
+  font-size: 20px;
   text-transform: uppercase;
   color: #fff;
   line-height: 24px;
   text-decoration: none;
+  font-weight: 300;
 }
 
 .header-nav__button{
-  @include button(50px, #006bc3)
+  width: 164px;
+  height: 40px;
+  border-radius: 6px;
+  background-color: #ffffff;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: justify;
+  color: #000000;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover{
+    text-decoration: none;
+  }
 }

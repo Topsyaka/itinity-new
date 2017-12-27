@@ -17892,11 +17892,20 @@ form.addEventListener('submit', function (e) {
 "use strict";
 
 
-var modalToggle = document.getElementById('toggle-modal');
+var modalToggle = document.querySelectorAll('.header-nav__button');
 var modal = document.getElementById('lets-talk');
 
-modalToggle.addEventListener('click', function () {
-  modal.classList.toggle('visible');
+modalToggle.forEach(function (item) {
+  item.addEventListener('click', function (e) {
+    e.stopPropagation();
+    console.log('clicked');
+    var isToggled = modal.classList.contains('visible');
+    if (!isToggled) {
+      modal.classList.add('visible');
+    } else {
+      modal.classList.remove('visible');
+    }
+  });
 });
 
 /***/ }),
