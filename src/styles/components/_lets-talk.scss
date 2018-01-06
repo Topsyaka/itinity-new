@@ -11,6 +11,8 @@
   overflow-y:scroll;
   overflow-x:hidden;
   display: none;
+  -webkit-background-size: cover;
+  background-size: cover;
   .btn{
     height: 50px;
   }

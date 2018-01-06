@@ -7,7 +7,7 @@
     "build": "webpack",
     "watch": "webpack --watch",
     "start": "sudo webpack && node server.js",
-    "dev":"npm run watch & node server.js"
+    "dev": "npm run watch & node server.js"
   },
   "author": "",
   "license": "ISC",
@@ -45,8 +45,8 @@
     "lodash": "^4.17.4",
     "normalize.css": "^7.0.0",
     "popper.js": "^1.12.7",
-    "react": "^16.1.1",
-    "react-dom": "^16.1.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
     "smoothscroll-polyfill": "^0.4.0"
   },
   "engines": {

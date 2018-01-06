@@ -49,6 +49,7 @@
     line-height: 22px;
     margin-bottom: 20px;
     color: #ffffff;
+
   }
 }
 
@@ -216,5 +217,8 @@
     padding: 0;
     margin: 0;
     list-style: none;
+  }
+  &.services-design--home{
+    background: #000000;
   }
 }
