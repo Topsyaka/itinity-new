@@ -7,16 +7,14 @@ function toogleHeader(){
       header.classList.remove('js-show');
       header.classList.remove('js-hide');  
     }
-    else if(lastScroll < newScroll){
-      lastScroll = newScroll;
-      header.classList.remove('js-show');
-      header.classList.add('js-hide');        
-    }else{
+    else{
       lastScroll = newScroll;
       header.classList.add('js-show');
       header.classList.remove('js-hide');
     }
   })
 }
+
+
 
 toogleHeader();

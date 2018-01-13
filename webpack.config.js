@@ -74,6 +74,10 @@ module.exports = {
       {
         from: 'src/vendor',
         to: 'vendor'
+      },
+      {
+        from: 'src/fonts',
+        to: 'fonts'
       }
     ]),
     new ImageminPlugin({ test: /\.(jpe?g|png|gif|svg)$/i }),

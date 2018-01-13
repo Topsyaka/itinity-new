@@ -40,6 +40,9 @@
   letter-spacing: normal;
   text-align: left;
   color: #000000;
+  @media screen and (max-width: 768px){
+    margin-bottom: 30px;
+  }
 }
 
 .about-content__subtitle{
@@ -51,4 +54,10 @@
   text-align: left;
   color: #000000;
   font-weight: 500;
+}
+
+.about-content__image{
+  @media screen and (max-width: 768px){
+    order: 2;
+  }
 }

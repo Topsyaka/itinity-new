@@ -11,6 +11,10 @@
     padding: 0 40px;
     flex-direction: column;
   }
+  @media screen and (max-width: 768px){
+    height: auto;
+    padding-bottom: 30px;
+  }
 }
 
 .footer__title{
@@ -42,6 +46,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  @media screen and (max-width: 768px){
+    align-items: center;
+    justify-content: space-around;
+  }
 }
 
 .footer-bottom__logo{
@@ -67,6 +76,9 @@
   letter-spacing: normal;
   text-align: left;
   color: #efefef;
+  @media screen and (max-width: 768px){
+    margin-top: 20px;
+  }
 }
 
 .footer__social{
@@ -99,4 +111,11 @@
       margin-right: 0;
     }
   }
+  @media screen and (max-width: 768px){
+    margin-top: 20px;
+  }
+}
+
+.footer-bottom__title{
+  font-family: 'NeuropolXRg-Regular', sans-serif;
 }

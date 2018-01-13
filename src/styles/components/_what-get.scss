@@ -21,6 +21,11 @@
 .what-get__items{
   display: flex;
   justify-content: space-between;
+  @media screen and (max-width: 1128px){
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
 
 .what-get__item{
@@ -36,6 +41,9 @@
   flex-direction: column;
   padding-top: 60px;
   position: relative;
+  @media screen and (max-width: 1128px){
+    margin-bottom: 20px;
+  }
   img{
     margin-bottom: 23px;
   }
@@ -63,6 +71,9 @@
       top: 0;
       bottom: 0;
       margin: auto;
+      @media screen and (max-width: 1128px){
+        display: none;
+      }
     }
   }
 }

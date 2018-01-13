@@ -44,7 +44,7 @@
   font-size: 20px;
   text-transform: uppercase;
   width: 400px;
-  height: 40px;
+  min-height: 40px;
   border-radius: 6px;
   background-color: #02ccd6;
   @media screen and (max-width: 768px){
@@ -63,6 +63,7 @@
   @media screen and (max-width: 768px){
     width: 100%;
     padding: 50px 10px 40px;
+    flex-wrap: wrap;
   }
 }
 
