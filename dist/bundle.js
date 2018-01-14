@@ -18147,6 +18147,12 @@ function toogleHeader() {
   });
 }
 
+document.querySelector('button.hamburger').addEventListener('click', function (e) {
+  document.querySelector('button.hamburger').classList.toggle('is-active');
+  document.querySelector('.header-nav.desctop').classList.toggle('is-active');
+  document.querySelector('body').classList.toggle('no-scroll');
+});
+
 toogleHeader();
 
 /***/ }),
@@ -18762,18 +18768,27 @@ form.addEventListener('submit', function (e) {
 
 var modalToggle = document.querySelectorAll('.header-nav__button');
 var modal = document.getElementById('lets-talk');
+var modalButton = document.querySelector('.lets-talk-button');
 
 modalToggle.forEach(function (item) {
   item.addEventListener('click', function (e) {
     e.stopPropagation();
-    console.log('clicked');
     var isToggled = modal.classList.contains('visible');
+
     if (!isToggled) {
       modal.classList.add('visible');
+      document.querySelector('.header-nav.desctop').classList.remove('is-active');
+      document.querySelector('body').classList.add('no-scroll');
+      document.querySelector('.header-button').classList.remove('is-active');
     } else {
       modal.classList.remove('visible');
     }
   });
+});
+
+modalButton.addEventListener('click', function () {
+  modal.classList.remove('visible');
+  document.querySelector('body').classList.remove('no-scroll');
 });
 
 /***/ }),

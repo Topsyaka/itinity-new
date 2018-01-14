@@ -12,6 +12,10 @@
   }
 }
 
+body.no-scroll{
+  overflow: hidden;
+}
+
 .member{
   display: flex;
   align-items: center;
@@ -98,6 +102,9 @@
   letter-spacing: normal;
   text-align: left;
   color: #ffffff;
+  @media screen and (max-width: 768px){
+    text-align: center;
+  }
 }
 
 .member__position{
@@ -109,4 +116,7 @@
   letter-spacing: normal;
   text-align: left;
   color: #ffffff;
+  @media screen and (max-width: 768px){
+    text-align: center;
+  }
 }

@@ -15,6 +15,11 @@ function toogleHeader(){
   })
 }
 
-
+document.querySelector('button.hamburger')
+    .addEventListener('click', (e) => {
+      document.querySelector('button.hamburger').classList.toggle('is-active');
+      document.querySelector('.header-nav.desctop').classList.toggle('is-active');
+      document.querySelector('body').classList.toggle('no-scroll')
+    });
 
 toogleHeader();

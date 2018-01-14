@@ -1,6 +1,10 @@
 .services-hero{
   position: relative;
   background: #000;
+  .container{
+    position: relative;
+    z-index: 2;
+  }
 }
 
 .services-wrapper{
@@ -15,12 +19,13 @@
   bottom: 0;
   left: 0;
   right: 0;
-  height: 870px;
+  background: url('../images/services/services_top_background_shapes.png');
+  background-size: cover;
+  z-index: 1;
 }
 
 .services-hero-top{
   height: 100vh;
-  background: url('../images/services/cells2.png');
   background-position: 50% 0%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -29,6 +34,16 @@
     justify-content: space-between;
     height: 100%;
     max-width: 1040px;
+    flex-wrap: wrap;
+    @media screen and (max-width: 768px){
+      justify-content: center;
+      padding-top: 90px;
+      padding-bottom: 90px;
+      height: auto;
+    }
+  }
+  @media screen and (max-width: 768px){
+    height: auto;
   }
 }
 
@@ -56,20 +71,33 @@
 .service-hero-top__main-image{
   width: 363px;
   height: 422px;
+  @media screen and (max-width: 565px){
+    width: 100%;
+    height: auto;
+    img{
+      width: 100%;
+    }
+  }
 }
 
 .services-hero-bottom{
   height: 755px;
-  background: #fff url('../images/services/cells3.png');
+  background: #fff; //url('../images/services/services_bottom_background_shapes.png');
   background-position: center;
   -webkit-background-size: cover;
   background-size: cover;
+  @media screen  and (max-width: 600px){
+    height: auto;
+  }
   .container{
     max-width: 1400px;
     justify-content: space-around;
     align-items: center;
     height: 100%;
     flex-wrap: wrap;
+    @media screen  and (max-width: 600px){
+      height: auto;
+    }
 
   }
 }
@@ -87,6 +115,9 @@
   justify-content: flex-end;
   align-items: center;
   transition: all 0.3s;
+  @media screen  and (max-width: 600px){
+    margin: 20px 0;
+  }
   &:hover{
     box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
     text-decoration: none;

@@ -8,6 +8,19 @@
     align-items: center;
     justify-content: space-around;
     height: 100%;
+    @media screen and (max-width: 768px){
+      flex-wrap: wrap;
+      .services-hero-top__content{
+        order: 1;
+      }
+      .service-hero-top__main-image{
+        order: 2;
+      }
+    }
+  }
+  @media screen and (max-width: 768px){
+    height: auto;
+    padding-top: 120px;
   }
 }
 
