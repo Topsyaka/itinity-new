@@ -27,4 +27,17 @@ function elementInView(element, offset){
   }
 }
 
+function setAnimation() {
+  const cell = document.querySelectorAll('.cell');
+  const len = cell.length;
+  $(cell).removeClass('hovered')
+  const rand = parseInt(Math.random()*len, 10);
+  const rand2 = parseInt(Math.random()*len, 10);
+  $(cell[rand]).addClass('hovered');
+  $(cell[rand2]).addClass('hovered');
+}
+setInterval(() => {
+  setAnimation();
+}, 1000)
+
 initScroll();

@@ -18226,7 +18226,7 @@ toogleSwitch();
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-
+/* WEBPACK VAR INJECTION */(function($) {
 
 function initScroll() {
   var wrapper = document.querySelector('.wrapper');
@@ -18256,7 +18256,21 @@ function elementInView(element, offset) {
   }
 }
 
+function setAnimation() {
+  var cell = document.querySelectorAll('.cell');
+  var len = cell.length;
+  $(cell).removeClass('hovered');
+  var rand = parseInt(Math.random() * len, 10);
+  var rand2 = parseInt(Math.random() * len, 10);
+  $(cell[rand]).addClass('hovered');
+  $(cell[rand2]).addClass('hovered');
+}
+setInterval(function () {
+  setAnimation();
+}, 1000);
+
 initScroll();
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(46)))
 
 /***/ }),
 /* 22 */

@@ -1,5 +1,6 @@
 .about-content{
   background: #fff url("../images/about/content-bg.png");
+  padding-top: 60px;
   .container{
     flex-direction: column;
   }
@@ -32,7 +33,7 @@
 }
 
 .about-content__lead{
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 300;
   font-style: normal;
   font-stretch: normal;

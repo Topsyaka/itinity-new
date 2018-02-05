@@ -1,6 +1,6 @@
 .hero-home{
   min-height: 100vh;
-  background: #02CCD6 url('../images/cells.svg');
+  background: #02CCD6;
   padding-top: 160px;
   -webkit-background-size: cover;
   background-size: contain;
@@ -18,13 +18,29 @@
 .cells-container{
   position: absolute;
   top: 0;
+  width: 100%;
+  height: 100%;
+  svg{
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .cell{
   fill-opacity: 0.2;
-  fill: #ffffff;
+  fill: #fff;
+
+  use{
+    transition: all 1s;
+  }
   &:hover{
     opacity: 1;
+  }
+}
+
+.cell.hovered{
+  use{
+    fill-opacity: 1;
   }
 }
 
